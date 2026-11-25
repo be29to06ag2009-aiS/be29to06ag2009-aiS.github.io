@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Festival Beatriz Torres Aguirre 5E</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./icon.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Festival 2028</div>
+            <ul>
+                <li><a href="#hero">Inicio</a></li>
+                <li><a href="#artistas">Artistas</a></li>
+                <li><a href="#entradas">Entradas</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h1>Festival de Verano 2024</h1>
+            <p>El evento musical más esperado del año</p>
+            <a href="#entradas" class="cta-button">Comprar Entradas</a>
+        </section>
+
+        <section id="artistas">
+            <h2>Artistas Destacados</h2>
+            <div class="artistas-grid">
+                <div class="artista-card">
+                    <img src="IMG/CHANS.jpg" alt="Charles Ans">
+                    <h3>Charles Ans</h3>
+                    <p>Rap</p>
+                </div>
+                <div class="artista-card">
+                    <img src="IMG/CAIFA.jpg" alt="Caifanes">
+                    <h3>Caifanes</h3>
+                    <p>Pop/Rock</p>
+                </div>
+                <div class="artista-card">
+                    <img src="IMG/ELEFAN.jpg" alt="Elefante">
+                    <h3>Elefante</h3>
+                    <p>Pop/Rock</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="entradas">
+            <h2>Tipos de Entradas</h2>
+            <div class="entradas-grid">
+                <div class="entrada-card">
+                    <h3>Entrada Básica</h3>
+                    <p class="precio">$1,200 MXN</p>
+                    <ul>
+                        <li>Acceso al festival</li>
+                        <li>Conciertos principales</li>
+                        <li>Auditorio Cinetix (Tlaxcala, Tlax.)</li>
+                        <li>Área general</li>
+                    </ul>
+                    <button>Comprar</button>
+                </div>
+                <div class="entrada-card destacada">
+                    <h3>Entrada VIP</h3>
+                    <p class="precio">$3,800 MXN</p>
+                    <ul>
+                        <li>Acceso VIP</li>
+                        <li>Meet and Greet</li>
+                        <li>Área VIP</li>
+                        <li>Auditorio Cinetix (Tlaxcala, Tlax.)</li>
+                    </ul>
+                    <button>Comprar</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto">
+            <h2>Contáctanos</h2>
+            <p>¿Tienes dudas sobre los artistas o boletos? Envíanos un mensaje.</p>
+
+            <form
+                action="https://formspree.io/f/xvkavnek"
+                class="fs-form fs-layout__2-column"
+                target="_top"
+                method="POST"
+            >
+                <div class="fs-field">
+                    <label class="fs-label" for="artista">Artista favorito</label>
+                    <select class="fs-select" id="artista" name="artista" required>
+                        <option value="">Selecciona un artista...</option>
+                        <option value="Charles Ans">Charles Ans</option>
+                        <option value="Caifanes">Caifanes</option>
+                        <option value="Elefante">Elefante</option>
+                    </select>
+                </div>
+
+                <div class="fs-field">
+                    <label class="fs-label" for="tipo-entrada">Tipo de entrada</label>
+                    <select class="fs-select" id="tipo-entrada" name="tipo-entrada" required>
+                        <option value="">Selecciona una entrada...</option>
+                        <option value="Entrada Básica ($1,200 MXN)">Entrada Básica ($1,200 MXN)</option>
+                        <option value="Entrada VIP ($3,800 MXN)">Entrada VIP ($3,800 MXN)</option>
+                        <option value="Consulta General">Consulta General</option>
+                    </select>
+                </div>
+
+                <div class="fs-field">
+                    <label class="fs-label" for="name">Nombre completo</label>
+                    <input class="fs-input" id="name" name="name" type="text" placeholder="Tu nombre" required />
+                </div>
+
+                <div class="fs-field">
+                    <label class="fs-label" for="email">Correo electrónico</label>
+                    <input class="fs-input" id="email" name="email" type="email" placeholder="ejemplo@correo.com" required />
+                </div>
+
+                <div class="fs-field col-span-full">
+                    <label class="fs-label" for="message">Tu mensaje</label>
+                    <textarea
+                        class="fs-textarea"
+                        id="message"
+                        name="message"
+                        placeholder="Escribe aquí tu duda o comentario sobre el festival..."
+                        required
+                    ></textarea>
+                </div>
+
+                <div class="fs-checkbox-field col-span-full">
+                    <div class="fs-checkbox-wrapper">
+                        <input
+                            aria-describedby="dpa-consent-description"
+                            class="fs-checkbox"
+                            id="dpa-consent"
+                            name="dpa-consent"
+                            required
+                            type="checkbox"
+                            value="Acepto"
+                        />
+                    </div>
+                    <div>
+                        <label class="fs-label" for="dpa-consent">
+                            Acepto el envío de mis datos para recibir respuesta
+                        </label>
+                        <p class="fs-description" id="dpa-consent-description">
+                            Tus datos se utilizarán únicamente para responder tu consulta sobre el Festival .
+                        </p>
+                    </div>
+                </div>
+
+                <div class="fs-button-group">
+                    <button class="fs-button" type="submit">Enviar Mensaje</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Síguenos</h4>
+                <div class="social-links">
+                    <p>Charles Ans</p>
+                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="footer__icons">
+                        <img src="./facebook.svg" alt="Facebook" class="footer__img">
+                    </a>
+                    <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="footer__icons">
+                        <img src="./youtube.svg" alt="YouTube" class="footer__img">
+                    </a>
+                </div>
+
+                <div class="social-links">
+                    <p>Caifanes</p>
+                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="footer__icons">
+                        <img src="./facebook.svg" alt="Facebook" class="footer__img">
+                    </a>
+                    <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="footer__icons">
+                        <img src="./youtube.svg" alt="YouTube" class="footer__img">
+                    </a>
+                </div>
+
+                <div class="social-links">
+                    <p>Elefante</p>
+                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="footer__icons">
+                        <img src="./facebook.svg" alt="Facebook" class="footer__img">
+                    </a>
+                    <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="footer__icons">
+                        <img src="./youtube.svg" alt="YouTube" class="footer__img">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Derechos reservados &copy; Beatriz Torres Aguirre</p>
+        </div>
+    </footer>
+</body>
+</html>
